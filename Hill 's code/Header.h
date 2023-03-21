@@ -7,5 +7,5 @@
 #include <string>
 using namespace std;
 bool coding();
-void decode();
+bool decode();
 

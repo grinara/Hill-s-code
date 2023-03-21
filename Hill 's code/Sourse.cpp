@@ -15,4 +15,5 @@ void main() {
 		if (buff>127) { cout << "Файл содержит недопустимые символы" << endl; file1.close(); return; }
 	}
 	if (!coding()) cout << "недопустимый ключ" << endl;
+	if (!decode()) cout << "недопустимый ключ" << endl;
 }

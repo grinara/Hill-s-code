@@ -15,25 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Sourse.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
     <ClCompile Include="code.cpp">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
     <ClCompile Include="decode.cpp">
-      <Filter>Файлы заголовков</Filter>
-    </ClCompile>
-    <ClCompile Include="Sourse.cpp">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Исходные файлы</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="112.txt">
-      <Filter>Файлы заголовков</Filter>
-    </Text>
     <Text Include="11.txt">
-      <Filter>Файлы заголовков</Filter>
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="112.txt">
+      <Filter>Исходные файлы</Filter>
     </Text>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Matrx.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
     <ClInclude Include="Header.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
