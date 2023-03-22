@@ -59,6 +59,7 @@ inline int matrix_size(string str) { // размерность матрицы kXk
 	int N = str.length();
 	int k = sqrt(N);
 	if (k * k != N) { k++; }
+	if (k == 1) { k = 2; }
 	return k;
 }
 inline int** create_mtr(int k, string str) { //матрица из ключа (дополнить по необходимости)
@@ -76,7 +77,7 @@ inline int** create_mtr(int k, string str) { //матрица из ключа (дополнить по не
 				mtr[i][j] = str[z] - 30;
 				z++;
 			}
-			cout << (int)mtr[i][j] << " ";
+			//cout << (int)mtr[i][j] << " ";
 		}
 		cout << endl;
 	}
@@ -122,9 +123,9 @@ inline int** invers(int** mtr, int n) {
 	for (int i = 0; i < n; i++) { mtr_inv[i] = new int[n]; }
 
 	int S = chek_det(mtr, n); // S - определитель матрицы ключа
-	cout << "S - " << S << endl;
+	//cout << "S - " << S << endl;
 	S = mod(S, 97);
-	cout << "S - " << S << endl;
+	//cout << "S - " << S << endl;
 
 	// Ищем обратный элемент x к определителю S по модулю 97. 
 	// (обычно используют  расширенный алгоритм Евклида). Так как S и 97 
@@ -150,12 +151,12 @@ inline int** invers(int** mtr, int n) {
 
 	}
 	mtr_inv = trans(mtr_inv, n);   //транспонируем матрицу
-	cout << "x - " << x << endl;
+	//cout << "x - " << x << endl;
 	for (int i = 0; i < n; i++) {// выводим обратную матрицу
 		for (int j = 0; j < n; j++) {
-			cout << mtr_inv[i][j] << " ";
+			//cout << mtr_inv[i][j] << " ";
 		}
-		cout << endl;
+		//cout << endl;
 	}
 	return mtr_inv;
 }
