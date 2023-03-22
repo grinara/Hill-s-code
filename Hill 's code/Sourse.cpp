@@ -9,6 +9,9 @@ using namespace std;
 void main() {
 	setlocale(LC_ALL, "Russian");
 	int check;
+	cout << "Алфавит" << endl;
+	for (int i = 32; i < 127; i++) { cout << char(i)<<" "; }
+	cout << endl;
 	cout << "Для кодирования введите 0" << endl;
 	cout << "Для разкодирования введите 1" << endl;
 	cout << "Для выхода введите что угодно" << endl;
