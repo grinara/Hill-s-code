@@ -6,6 +6,8 @@
 #include <fstream>
 #include <string>
 using namespace std;
+void coding();
+void decode();
 inline bool cheak_key(string key) {
 	for (int i = 0; i < key.size(); i++) {
 		if (key[i] < 32 || key[i]>127) { return false; }

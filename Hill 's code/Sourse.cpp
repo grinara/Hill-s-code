@@ -4,7 +4,7 @@
 #include <list>
 #include <fstream>
 #include <string>
-#include "Header.h"
+#include "Matrx.h"
 using namespace std;
 //Для текста и ключа можно использовать символы, аски-код которых лежит
 //в пределах промежутка [32,127]. Каждому символу ставится в соответствие
